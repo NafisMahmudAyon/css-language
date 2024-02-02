@@ -197,7 +197,7 @@ const Pages = () => {
 						<h4 className="text-2xl mb-2 font-medium relative inline-block after:content-[':'] after:absolute after:pl-1 after:inline-block after:w-[max-content] ">
 							{pageData?.details?.definition?.label}
 						</h4>
-						<p
+						<p className="text-sm lg:text-md"
 							dangerouslySetInnerHTML={{
 								__html: pageData?.details?.definition?.value,
 							}}
@@ -240,7 +240,7 @@ const Pages = () => {
 												?.label
 										}
 									</th>
-									<td className="px-4 py-2 text-md ">
+									<td className="px-4 py-2 text-sm ">
 										{
 											pageData?.details?.formalDefinition?.value?.appliesTo
 												?.value
@@ -254,13 +254,11 @@ const Pages = () => {
 												?.label
 										}
 									</th>
-									<td className="px-4 py-2 text-md ">
-										<code>
-											{
-												pageData?.details?.formalDefinition?.value?.inherited
-													?.value
-											}
-										</code>
+									<td className="px-4 py-2 text-sm ">
+										{
+											pageData?.details?.formalDefinition?.value?.inherited
+												?.value
+										}
 									</td>
 								</tr>
 								<tr className="text-lg  odd:bg-gray-600/25  ">
@@ -271,7 +269,7 @@ const Pages = () => {
 										}
 									</th>
 									<td
-										className="px-4 py-2 text-md "
+										className="px-4 py-2 text-sm "
 										dangerouslySetInnerHTML={{
 											__html:
 												pageData?.details?.formalDefinition?.value
@@ -285,7 +283,7 @@ const Pages = () => {
 												?.label
 										}
 									</th>
-									<td className="px-4 py-2 text-md ">
+									<td className="px-4 py-2 text-sm ">
 										{
 											pageData?.details?.formalDefinition?.value?.animationType
 												?.value
