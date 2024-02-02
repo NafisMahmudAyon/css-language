@@ -1,5 +1,6 @@
 import NavMenu from "../NavMenu/NavMenu";
 
+
 function Home() {
 	return (
 		<>
