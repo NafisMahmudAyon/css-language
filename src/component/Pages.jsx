@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import NavMenu from "../NavMenu/NavMenu";
+import NavMenu from "./Navmenu";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
-import NavMenuList from "../NavMenuList";
+import NavMenuList from "./NavMenuList";
 import { useParams } from "react-router-dom";
-
-
 
 const Pages = () => {
 	const { propertyName } = useParams();
@@ -14,7 +12,7 @@ const Pages = () => {
 	const [pageData, setPageData] = useState(
 		findLabelByValue("accent-color", NavMenuList[propertyName[0]].properties)
 	);
-  console.log(pageData)
+	console.log(pageData);
 
 	function findLabelByValue(valueToFind, propertiesArray) {
 		for (const property of propertiesArray) {

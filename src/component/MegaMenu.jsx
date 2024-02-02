@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-import data from "../NavMenuList/index.json";
+import data from "./NavMenuList/index.json";
 // import "./MegaMenu.css";
 
 const MegaMenu = () => {
-
-	
 	const [activeLetter, setActiveLetter] = useState(null);
-	console.log(activeLetter)
+	console.log(activeLetter);
 
 	const handleLetterClick = (letter) => {
 		setActiveLetter((prevLetter) => (prevLetter === letter ? null : letter));
@@ -67,7 +65,9 @@ const MegaMenu = () => {
 					{Object.keys(data).map((letter, index) => (
 						<span
 							key={index}
-							className={`text-lg lg:text-2xl cursor-pointer capitalize hover:text-blue-500 ${letter == activeLetter ? "text-blue-500 " : ""} `}
+							className={`text-lg lg:text-2xl cursor-pointer capitalize hover:text-blue-500 ${
+								letter == activeLetter ? "text-blue-500 " : ""
+							} `}
 							onClick={() => handleLetterClick(letter)}>
 							{letter}
 						</span>

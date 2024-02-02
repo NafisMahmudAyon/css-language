@@ -1,5 +1,4 @@
-import NavMenu from "../NavMenu/NavMenu";
-
+import NavMenu from "./Navmenu";
 
 function Home() {
 	return (

@@ -1,13 +1,9 @@
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./component/Home/Home";
+import Home from "./component/Home";
 import AccentColor from "./component/Properties/AccentColor/AccentColor";
-import Pages from "./component/Pages/Pages";
-
+import Pages from "./component/Pages";
 
 function App() {
-
-
 	return (
 		<BrowserRouter>
 			<Routes>
@@ -22,10 +18,4 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
 

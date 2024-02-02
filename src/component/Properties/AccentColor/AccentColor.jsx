@@ -1,11 +1,10 @@
 import React from "react";
-import NavMenu from "../../NavMenu/NavMenu";
+import NavMenu from "../../Navmenu";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import data from "../../NavMenuList/index.json";
 
 const AccentColor = () => {
-	
 	const accentColorDetails = {
 		title: "accent-color",
 		definition: {
@@ -36,11 +35,10 @@ const AccentColor = () => {
 				label: "Animation type",
 				value: "by computed value type",
 			},
-			
 		},
 		syntaxes: {
-				label: "Values",
-				value: `/* Keyword values */
+			label: "Values",
+			value: `/* Keyword values */
 accent-color: auto;
 
 /* <color> values */
@@ -55,7 +53,7 @@ accent-color: initial;
 accent-color: revert;
 accent-color: revert-layer;
 accent-color: unset;`,
-			},
+		},
 	};
 	const demo = `.element {
   accent-color: #f8a100;

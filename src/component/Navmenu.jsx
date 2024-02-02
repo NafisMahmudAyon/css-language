@@ -1,8 +1,8 @@
-import React from 'react'
-import MegaMenu from "../MegaMenu/MegaMenu";
+import React from "react";
+import MegaMenu from "./MegaMenu";
 
 const NavMenu = () => {
-  return (
+	return (
 		<>
 			<div className="px-6 pt-4">
 				<div className="flex flex-col items-center gap-3 justify-between  ">
@@ -12,6 +12,6 @@ const NavMenu = () => {
 			</div>
 		</>
 	);
-}
+};
 
-export default NavMenu
+export default NavMenu;
