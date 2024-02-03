@@ -91,6 +91,77 @@ accent-color: unset;`,
 				label: "Align Content",
 				value: "align-content",
 				link: "/properties/align-content",
+				details: {
+					title: "align-content",
+					definition: {
+						label: "Definition",
+						value:
+							"The CSS <code>align-content</code> property sets the distribution of space between and around content items along a <a href='/properties/flex'>flexbox</a>'s cross-axis or a <a href='/properties/grid'>grid</a>'s block axis.",
+					},
+					syntax: {
+						label: "Syntax",
+						value: `align-content: flex-start | flex-end | center | space-between | space-around | stretch
+
+.flex-container {
+  align-content: space-around;
+}`,
+					},
+					formalDefinition: {
+						label: "Formal Definition",
+						value: {
+							initialValue: {
+								label: "Initial Value",
+								value: "normal",
+							},
+							appliesTo: {
+								label: "Applies to",
+								value: "multi-line flex containers",
+							},
+							inherited: {
+								label: "Inherited",
+								value: "no",
+							},
+							computedValue: {
+								label: "Computed value",
+								value: "as specified",
+							},
+							animationType: {
+								label: "Animation type",
+								value: "discrete",
+							},
+						},
+					},
+					syntaxes: {
+						label: "Values",
+						value: `align-content = 
+  normal                                   |
+  <baseline-position>                      |
+  <content-distribution>                   |
+  <overflow-position>? <content-position>  
+
+<baseline-position> = 
+  [ first | last ]?  &&
+  baseline           
+
+<content-distribution> = 
+  space-between  |
+  space-around   |
+  space-evenly   |
+  stretch        
+
+<overflow-position> = 
+  unsafe  |
+  safe    
+
+<content-position> = 
+  center      |
+  start       |
+  end         |
+  flex-start  |
+  flex-end    
+`,
+					},
+				},
 			},
 			{
 				label: "Align Items",

@@ -18,7 +18,7 @@ const MegaMenu = () => {
 		}
 
 		return (
-			<div className="code-no-bg bg-zinc-700 rounded-lg pt-6 px-3 lg:p-6 absolute top-[110%] w-full lg:w-[90vw] left-1/2 -translate-x-1/2 shadow-lg flex gap-3 max-h-[300px] overflow-auto z-10 ">
+			<div className="code-no-bg dark:bg-red-200 bg-zinc-700 rounded-lg pt-6 px-3 lg:p-6 absolute top-[110%] w-full lg:w-[90vw] left-1/2 -translate-x-1/2 shadow-lg flex gap-3 max-h-[300px] overflow-auto z-10 ">
 				<div className="selectors relative px-4  min-w-[30%] group ">
 					<h3 className="text-lg font-bold absolute mb-2 -top-[14px]  px-[10px] left-1/2 -translate-x-1/2 after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-[rgba(0,160,100,.9)] after:-bottom-[2px] after:left-0 group-hover:after:w-full after:transition-all after:duration-500 after:ease-in-out group-hover:text-[rgba(0,160,100,.9)] ">
 						Selectors
