@@ -15,7 +15,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #b91010; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,6 +31,9 @@ code{
   background-color: #343434;
   border-radius: 2px;
 }
+/* :is(.dark code){
+  background-color: white;
+} */
 pre{
   border-radius: 8px;
   margin: 20px 0;

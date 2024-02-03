@@ -12,7 +12,7 @@ const Pages = () => {
 	const [pageData, setPageData] = useState(
 		findLabelByValue(propertyName, NavMenuList[propertyName[0]].properties)
 	);
-	// console.log(pageData);
+	console.log(pageData.details);
 
 	function findLabelByValue(valueToFind, propertiesArray) {
 		for (const property of propertiesArray) {
@@ -96,7 +96,7 @@ const Pages = () => {
 // 			},
 // 		};
 	return (
-		<div>
+		<div className="border min-h-screen bg-[#dff9fb] dark:bg-[#242424] text-[#242424] dark:text-[#dff9fb] ">
 			<NavMenu />
 			{pageData.details == null && (
 				<div className=" h-screen justify-center">
@@ -119,7 +119,7 @@ const Pages = () => {
 					</div>
 				</div>
 			)}
-			{pageData !== null && (
+			{(pageData.details !== null || pageData.details !== undefined) && (
 				<div className="mx-auto w-[90%] max-w-[1440px] mt-8 px-3 group transition-all duration-400 ease-in-out ">
 					<h2 className="mx-auto pt-2 mb-5 text-center text-4xl font-semibold relative after:content-[''] after:absolute after:w-0 after:h-[1px] after:bg-[rgba(255,255,255,.9)] after:-bottom-[2px] after:left-0 group-hover:after:w-full after:transition-all after:duration-500 after:ease-in-out w-[max-content] ">
 						{pageData?.details?.title}
@@ -128,7 +128,8 @@ const Pages = () => {
 						<h4 className="text-2xl mb-2 font-medium relative inline-block after:content-[':'] after:absolute after:pl-1 after:inline-block after:w-[max-content] ">
 							{pageData?.details?.definition?.label}
 						</h4>
-						<p className="text-sm lg:text-md"
+						<p
+							className="text-sm lg:text-md"
 							dangerouslySetInnerHTML={{
 								__html: pageData?.details?.definition?.value,
 							}}

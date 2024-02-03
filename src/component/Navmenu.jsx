@@ -8,7 +8,7 @@ const NavMenu = () => {
 		<>
 			<div className="px-6 pt-4">
 				<div className="flex flex-col items-center gap-3 justify-between  ">
-					<span className="text-3xl font-bold ">CSS </span>
+					<a href="/" className="text-3xl font-bold ">CSS </a>
 					<button
 						onClick={() => setMode(mode === "light" ? "dark" : "light")}
 						className={`ml-3 flex items-center justify-center rounded-full p-1 ${
