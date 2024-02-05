@@ -4,6 +4,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import NavMenuList from "./NavMenuList";
 import { useParams } from "react-router-dom";
+import ExternalDataComponent from "./DataScraping";
 
 const Pages = () => {
 	const { propertyName } = useParams();
@@ -235,6 +236,8 @@ const Pages = () => {
 					</div>
 				</div>
 			)}
+
+			<ExternalDataComponent />
 		</div>
 	);
 };
